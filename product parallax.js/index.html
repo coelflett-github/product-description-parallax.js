@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta charset="utf-8">
+	<title>Parallax.js</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="parallax.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+
+	
+	<div id="bg">
+		<div class="container">
+			<ul id="scene">
+				<li class="layer" ><img id="rectangle" src="/images/Rectangle.jpg"></li>
+				<li class="layer" data-depth=".05"><img id="leafs" src="/images/green-leaves2.png"></li>
+				<li class="layer" data-depth=".4"><img id="standingShadow" src="/images/woman-standing-shadow.jpg.png"></li>
+				<li class="layer" data-depth=".2"><img id="standing" src="/images/woman-standing.jpg"></li>
+				<li class="layer" data-depth=".8"><img id="plantPhotoShadow" src="/images/photo-plant-shadow2.png"></li>		
+				<li class="layer" data-depth=".4"><img id="sittingShadow" src="/images/woman-sitting-shadow.png"></li>
+				<li class="layer" data-depth=".2"><img id="sitting" src="/images/woman-sitting.jpg"></li>
+				<li class="layer" data-depth=".4"><img id="plantPhoto" src="/images/photo-plant.jpg"></li>		
+				<li class="layer" data-depth=".04"><img id="number01" src="/images/number01.png"></li>	
+				<div class="layer" id="box" data-depth=".07"></div>
+				<h1 class="layer" id="ourCatalog" data-depth=".05">OUR CATALOG</h1>
+				<p class="layer" id="textBox" data-depth=".05">
+						We strive to make high-quality clothing for 
+						the average person. Our products are made from 
+						high quality fabrics that ensure a lasting fit, 
+						soft experience and great product no matter how 
+						many time you wear it.
+				</p>
+
+
+				<!-- 
+				<p class="textBox">
+					We strive to make high-quality clothing for 
+					the average person. Our products are made from 
+					high quality fabrics that ensure a lasting fit, 
+					soft experience and great product no matter how 
+					many time you wear it.
+				</p>-->
+
+				<!--
+				<li class="layer" data-depth=".2"><img src="woman-standing.jpg"></li>
+				<li class="layer" data-depth=".3"><img src="woman-sitting.jpg"></li>
+				<li class="layer" data-depth=".5"><img src="photo-plant.jpg"></li>		
+				<li class="layer" data-depth=".3"><img src="numder01.png"></li>	
+				<li class="layer" id="title" data-depth=".05"><img src="OUR CATALOG.png"></li>
+				<li class="layer" data-depth=".05"><img src="body.png"></li> 
+				-->
+
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
